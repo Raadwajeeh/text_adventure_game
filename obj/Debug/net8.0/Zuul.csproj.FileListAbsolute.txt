@@ -1,0 +1,15 @@
+D:\OneDrive - ROC Alfa-college\Documenten\ICT\Module 4\zuul_raadwajeeh\bin\Debug\net8.0\Zuul.exe
+D:\OneDrive - ROC Alfa-college\Documenten\ICT\Module 4\zuul_raadwajeeh\bin\Debug\net8.0\Zuul.deps.json
+D:\OneDrive - ROC Alfa-college\Documenten\ICT\Module 4\zuul_raadwajeeh\bin\Debug\net8.0\Zuul.runtimeconfig.json
+D:\OneDrive - ROC Alfa-college\Documenten\ICT\Module 4\zuul_raadwajeeh\bin\Debug\net8.0\Zuul.dll
+D:\OneDrive - ROC Alfa-college\Documenten\ICT\Module 4\zuul_raadwajeeh\bin\Debug\net8.0\Zuul.pdb
+D:\OneDrive - ROC Alfa-college\Documenten\ICT\Module 4\zuul_raadwajeeh\obj\Debug\net8.0\Zuul.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive - ROC Alfa-college\Documenten\ICT\Module 4\zuul_raadwajeeh\obj\Debug\net8.0\Zuul.AssemblyInfoInputs.cache
+D:\OneDrive - ROC Alfa-college\Documenten\ICT\Module 4\zuul_raadwajeeh\obj\Debug\net8.0\Zuul.AssemblyInfo.cs
+D:\OneDrive - ROC Alfa-college\Documenten\ICT\Module 4\zuul_raadwajeeh\obj\Debug\net8.0\Zuul.csproj.CoreCompileInputs.cache
+D:\OneDrive - ROC Alfa-college\Documenten\ICT\Module 4\zuul_raadwajeeh\obj\Debug\net8.0\Zuul.sourcelink.json
+D:\OneDrive - ROC Alfa-college\Documenten\ICT\Module 4\zuul_raadwajeeh\obj\Debug\net8.0\Zuul.dll
+D:\OneDrive - ROC Alfa-college\Documenten\ICT\Module 4\zuul_raadwajeeh\obj\Debug\net8.0\refint\Zuul.dll
+D:\OneDrive - ROC Alfa-college\Documenten\ICT\Module 4\zuul_raadwajeeh\obj\Debug\net8.0\Zuul.pdb
+D:\OneDrive - ROC Alfa-college\Documenten\ICT\Module 4\zuul_raadwajeeh\obj\Debug\net8.0\Zuul.genruntimeconfig.cache
+D:\OneDrive - ROC Alfa-college\Documenten\ICT\Module 4\zuul_raadwajeeh\obj\Debug\net8.0\ref\Zuul.dll
