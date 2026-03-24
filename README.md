@@ -1,142 +1,146 @@
-# World of Zuul – Text Adventure Game
-# World of Zuul – Tekst Avontuur Spel
+
+# 🧭 World of Zuul – Text Adventure Game (C#)
+
+## 📌 Project Overview
+World of Zuul is a console-based text adventure game developed in C#.  
+The game is built as part of a Software Development module focused on Object-Oriented Programming (OOP).
+
+In this game, the player explores different rooms, collects items, manages health, and completes objectives to win.
 
 ---
 
-## 🇬🇧 English Version
+## 🎮 Gameplay Description
+The player navigates through a world of connected rooms using text commands.
 
-## 1. Game Description
-
-World of Zuul is a console-based text adventure game developed in C# using Object-Oriented Programming principles.
-
-In this game, the player explores multiple rooms, collects items, manages health, and solves small challenges.  
-Each room may contain items that can be picked up, used, or dropped. The player has a limited backpack capacity based on weight.
-
-The player loses health when moving between rooms.  
-If health reaches zero, the game ends.  
-The player wins by reaching the final room and completing the objective.
-
-The game demonstrates the use of:
-- Classes and Objects
-- Properties and Methods
-- Dictionary collections
-- Inventory management
-- Game loop logic
-- Command processing
+### Core Mechanics:
+- Move between rooms (north, south, east, west, up, down)
+- Explore environments using `look`
+- Pick up and drop items
+- Manage inventory with weight limits
+- Lose health when moving
+- Use items to progress
+- Win or lose depending on actions
 
 ---
 
-## 2. How to Run the Game
+## 🧠 Learning Goals
+This project demonstrates:
 
-### Step 1 – Install .NET
+- Object-Oriented Programming (OOP)
+- Class design (Player, Room, Item, Inventory)
+- Use of properties and methods
+- Collections (Dictionary, List)
+- Game loop implementation
+- Command parsing system
+- Basic game architecture
 
-Install the latest version of .NET SDK:  
-https://dotnet.microsoft.com/en-us/download
+---
 
-### Step 2 – Open Terminal
+## 🏗️ Project Structure
 
-Open a terminal in the folder that contains the `Zuul.csproj` file.
 
-### Step 3 – Run the Game
+/Zuul
+│
+├── Program.cs → Entry point of the game
+├── Game.cs → Game logic and loop
+├── Room.cs → Room structure and exits
+├── Player.cs → Player state (health, inventory)
+├── Item.cs → Item definition
+├── Inventory.cs → Item storage system
+├── Parser.cs → User input handling
+├── Command.cs → Command object
+├── CommandLibrary.cs → Valid commands
+└── Zuul.csproj → Project configuration
 
-Type:
 
+---
+
+## ⚙️ Installation & Running
+
+### 1. Install .NET
+Download and install the latest .NET SDK:  
+https://dotnet.microsoft.com/download
+
+### 2. Open Terminal
+Navigate to the project folder where the `.csproj` file is located.
+
+### 3. Run the Game
+```bash
 dotnet run
-
 
 The game will start in the console.
 
----
+🎯 Available Commands
+Command	Description
+help	Show all commands
+go <direction>	Move to another room
+look	Show room description
+status	Show health and inventory
+take <item>	Pick up an item
+drop <item>	Drop an item
+use <item>	Use an item
+quit	Exit the game
+🧩 Game Features
+Multiple interconnected rooms
+Inventory system with weight limit
+Health system (player takes damage when moving)
+Items that can be collected and used
+Command-based interaction
+Win and lose conditions
+🧱 Technical Concepts Used
+Object-Oriented Programming
+Classes and objects
+Encapsulation (private fields, public methods)
+Composition (Player has Inventory)
+Collections
+Dictionary for storing items
+List for managing commands
+Game Architecture
+Game loop (while loop)
+Command pattern
+Separation of concerns
+🗺️ UML Design
 
-## 3. Implemented Features
+The project is based on UML class diagrams to structure the system design.
 
-The following features have been implemented:
+Main relationships:
 
-- Look command
-- Up and down room navigation
-- Player class
-- Health system (Damage, Heal, IsAlive)
-- Status command (shows health and backpack content)
-- Item class
-- Inventory system using Dictionary
-- Backpack with maximum weight limit
-- Room chest inventory
-- Take and Drop commands
-- Use command
-- Third command word support
-- Win and Lose conditions
-- Multiple connected rooms (6–10 rooms)
+Player → has Inventory
+Room → has exits and items
+Game → controls flow and player state
+🚀 How It Works
+The game starts in Program.cs
+A Game object is created
+The Play() method starts the game loop
+The player enters commands
+Commands are parsed and executed
+The game continues until:
+Player dies
+Player wins
+Player quits
+🧪 Example Gameplay
+> go north
+You are in the hallway.
 
----
+> look
+You see a key.
 
----
+> take key
+Item added to inventory.
 
-## 🇳🇱 Nederlandse Versie
+> status
+Health: 90
+Inventory: key
 
-## 1. Beschrijving van het spel
+> use key east
+Door unlocked!
+📈 Possible Improvements
+Add enemies or combat system
+Add puzzles or locked rooms
+Multiplayer support
+GUI instead of console
+Save/load system
+👨‍💻 Author
 
-World of Zuul is een console-gebaseerd tekst avontuur dat is ontwikkeld in C# met Objectgeoriënteerd Programmeren (OOP).
-
-In dit spel verkent de speler meerdere kamers, verzamelt items, beheert gezondheid en lost kleine uitdagingen op.  
-In elke kamer kunnen items liggen die de speler kan oppakken, gebruiken of neerleggen. De speler heeft een backpack met een maximaal gewicht.
-
-De speler verliest gezondheid bij het verplaatsen naar een andere kamer.  
-Wanneer de gezondheid 0 bereikt, eindigt het spel.  
-De speler wint door de eindkamer te bereiken en het doel te voltooien.
-
-Het spel laat zien dat er gebruik wordt gemaakt van:
-- Classes en Objects
-- Properties en Methods
-- Dictionary collecties
-- Inventory systeem
-- Game loop
-- Command verwerking
-
----
-
-## 2. Het spel starten
-
-### Stap 1 – Installeer .NET
-
-Installeer de laatste versie van de .NET SDK:  
-https://dotnet.microsoft.com/en-us/download
-
-### Stap 2 – Open Terminal
-
-Open een terminal in de map waar het bestand `Zuul.csproj` staat.
-
-### Stap 3 – Start het spel
-
-Typ:
-
-dotnet run
-
-
-Het spel start in de console.
-
----
-
-## 3. Geïmplementeerde functionaliteiten
-
-De volgende functionaliteiten zijn toegevoegd:
-
-- Look commando
-- Up en down navigatie
-- Player class
-- Health systeem (Damage, Heal, IsAlive)
-- Status commando (gezondheid + backpack inhoud)
-- Item class
-- Inventory systeem met Dictionary
-- Backpack met maximaal draaggewicht
-- Chest (inventory) in elke Room
-- Take en Drop commando's
-- Use commando
-- Ondersteuning voor een derde commandowoord
-- Win- en verliesconditie
-- Meerdere verbonden kamers (6–10 kamers)
-
----
-
-Developed as part of Module 04 – Software Development (C#)
-Ontwikkeld als onderdeel van Module 04 – Software Development (C#)
-
+Raad Al-Wajeeh
+Software Development Student
